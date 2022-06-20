@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>惠州风光</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="首页css\mainworld.css">
+    <script type="text/javascript" src="首页JS\jquery.min.js" ></script>
+    
+
+    <style>
+
+    </style>
+
+
+<script charset="utf-8" src="https://map.qq.com/api/gljs?v=1.exp&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77"></script>
+ 
+</head>
+<body>
+
+    <div id="top"></div>
+        <div>
+            <div class="header">
+                <div class="logo">
+                    <img src="首页img\logo5.png" alt="">
+                </div>
+                
+                <ul class="nav">
+                    <li>
+                        <a href="#top">首页</a>
+                    </li>
+                    <li>
+                        <a href="旅游风光.html">旅游风光</a>
+                    </li>
+                    <li>
+                        <a href="美食风光.html">美食风光</a>
+                    </li>
+                    <li>
+                        <a href="历史风光.html">历史风光</a>
+                    </li>
+                    <li>
+                        <a href="#advice">建议传达</a>
+                    </li>
+        
+                </ul>
+        
+            </div>
+        </div>
+
+
+    
+
+        
+        <div class="banner">
+
+            <ul class="img">
+
+                <li>
+
+                    <a href="#"><img src="首页img\4.jpg"></a>
+
+                </li>
+
+                <li>
+
+                    <a href="#"><img src="首页img\3.2.png"></a>
+
+                </li>
+
+                <li>
+
+                    <a href="#"><img src="首页img\2.jpg"></a>
+
+                </li>
+
+            </ul>
+
+
+ 
+
+            <ul class="num">
+
+            </ul>
+
+            <div class="btn btn_l">&lt;</div>
+
+            <div class="btn btn_r">&gt;</div>
+
+        </div>
+
+    
+        <script src="首页JS\mainworld(轮播图).js" type="text/javascript"></script>
+
+    
+
+        <div class="main">
+            
+            
+            <div class="middle">
+                <div class="contents" >
+                    <a href="旅游风光.html" >
+                    <img src="首页img\旅游风光.png"  onmouseover="this.src='首页img/旅游图片2.png'" onmouseout="this.src='首页img/旅游风光.png'" class="line-img">
+                    </a>
+                    
+
+                    <div class="line">
+
+                        <p class="line-word">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp远离喧嚣</p>
+                        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"  width="120px" color=#F5DEB3 SIZE=1> 
+                        <p class="line-word">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp沉淀己心</p>
+                        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"  width="120px" color=#F5DEB3 SIZE=1> 
+                        
+                    </div>
+                </div>
+            
+               
+                <div class="contents">
+                    <a href="美食风光.html" >
+                    <img src="首页img\美食风光.png" onmouseover="this.src='首页img/美食图片2.png'" onmouseout="this.src='首页img/美食风光.png'"   class="line-img">
+                    </a>
+
+                    <div class="line">
+
+                        <p class="line-word">&nbsp&nbsp&nbsp吃食是一种幸福</p>
+                        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"  width="120px" color=#F5DEB3 SIZE=1> 
+                        <p class="line-word">&nbsp&nbsp&nbsp品味是一种情趣</p>
+                        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"  width="120px" color=#F5DEB3 SIZE=1> 
+                    </div>
+                </div>
+            
+                <div class="contents">
+                    <a href="历史风光.html" >
+                    <img src="首页img\历史风光.png" onmouseover="this.src='首页img/历史图片2.png'" onmouseout="this.src='首页img/历史风光.png'" class="line-img">
+                    </a>
+
+                    <div class="line">
+
+                        <p class="line-word">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp以史为鉴</p>
+                        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"  width="120px" color=#F5DEB3 SIZE=1> 
+                        <p class="line-word">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp可以知兴替</p>
+                        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"  width="120px" color=#F5DEB3 SIZE=1> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="首页JS\mainworld(滑动动画).js" type="text/javascript"></script>
+
+        <br><br><br><br><br>
+
+<div id="advice">
+    <div class="map-form">
+        <body onload="initMap()">
+            <div class="second-foot">
+                <div class="map-word">惠州地图</div>
+                <div id="containers"></div>
+                <script type="text/javascript">
+                    function initMap() {
+                        var center = new TMap.LatLng(39.984104, 116.307503);
+                        //初始化地图
+                        var map = new TMap.Map("containers", {
+                            rotation: 20,//设置地图旋转角度
+                            pitch:30, //设置俯仰角度（0~45）
+                            zoom:12,//设置地图缩放级别
+                            center:  [23.099644,114.421032]//设置地图中心点坐标
+                        });
+                    }
+                </script>
+            </div>
+                   <!-- 表单 -->
+       <section class="section">
+        <div class="container">
+            <div class="form-word">建议传达</div>
+            <form action="" class="form grid">
+                <div class="inputs grid">
+                    <div class="contact_content">
+                        <label for="" class="label">用户名</label>
+                        <input type="text" class="input" required="required" id="usename">
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="label">邮箱</label>
+                        <input type="email" class="input" required="required" id="useemail">
+                    </div>
+    
+                    <div class="contact_content" >
+                        <label for="" class="label">建议</label>
+                        <textarea name="" id="" cols="0" rows="10" class="input" required="required" itemid="useadvice"></textarea>
+                    </div>
+                    <div>
+                        <!-- 返回结果 -->
+                        <div id="result" style="margin-left:40px ; margin-top:20px; font-size:15px; font-family:'微软雅黑'; color:#666;">
+                            状态:
+                        </div>
+                        <button type="submit"  class="button">提交</button>
+                        <button type="reset" onclick="loadDoc()" class="button">重置</button>
+                        <script src="首页JS\主页（建议）.js"></script>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    
+        </section>
+    </div>
+</div>
+        <body>
+
+    
+    <div class="foot">
+        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="1000px" color=#C0C0C0 SIZE=1>
+            <div class="foot-word1">
+                
+                苏堤烟雨 惠州等你
+            </div>
+            <br>
+            <div class="foot-word2">
+                惠州风光小组 : 谢易均、李劲威、蔡培鑫
+            </div>
+    </div>
+
+
+
+
+</body>
+
+
+
+
+</html>

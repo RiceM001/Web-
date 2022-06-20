@@ -1,0 +1,389 @@
+
+.header{
+    width: 1266px;
+    height: 120px;
+    display: flex;
+    margin: 0 auto ;
+    
+}
+
+.header .logo img{
+    margin-top: 5px;
+    height: 100px;
+    /* margin-left: 200%; */
+}
+
+.header .nav{
+    
+    display: flex;
+    margin-left: 420px;
+    
+}
+.header .nav li{
+    /* margin: 0 auto; */
+    margin-top: 50px;
+    padding-right: 5em;
+    
+}
+.header .nav li a{
+    color: #666;
+    font-size: 14px;
+    font-family: "SimHei";
+    text-decoration: none;
+}
+.header .nav li a:hover{
+    color: #e4c895;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 轮播图 */
+
+.banner {
+
+/* border: 5px solid #000; */
+
+width: 1266px;
+
+height: 440px;
+
+position: relative;
+
+overflow: hidden;
+margin: 0 auto;
+
+}
+
+
+
+.banner .img {
+
+width: 8000px;
+
+position: absolute;
+
+left: 0px;
+
+top: 0px;
+
+}
+
+
+
+.banner .img li {
+
+float: left;
+
+}
+
+
+
+.banner .img li img {
+
+width: 1266px;
+height: 440px;
+}
+
+
+
+
+
+/*小圆点的样式*/
+
+
+
+.banner .num {
+
+position: absolute;
+
+right: 40px;
+
+bottom: 30px;
+
+}
+
+
+
+.banner .num li {
+
+width: 10px;
+
+height: 10px;
+
+float: left;
+
+background: rgb(148, 144, 144);
+
+margin-left: 20px;
+
+border-radius: 50px;
+
+border: 1px solid rgb(92, 90, 90);
+
+}
+
+
+
+.banner .num li.on {
+
+border: 1px solid #333;
+
+background: rgb(233, 229, 229)
+
+}
+
+
+
+
+
+/*两边耳朵的样式*/
+
+
+
+.banner .btn {
+
+position: absolute;
+
+width: 70px;
+
+height: 70px;
+
+background: rgba(41, 40, 40, 0.7);
+
+font-size: 60px;
+
+color: rgb(211, 204, 204);
+
+text-align: center;
+
+line-height: 70px;
+
+top: 60%;
+
+margin-top: -80px;
+
+cursor: pointer;
+
+display: none;
+
+}
+
+
+
+.banner:hover .btn {
+
+display: block;
+
+}
+
+
+
+.banner .btn_l {
+
+left: 10px;
+
+border-radius: 50%
+
+}
+
+
+
+.banner .btn_r {
+
+right: 10px;
+
+border-radius: 50%
+
+}
+
+
+
+/* content */
+.main {
+display: flex;
+margin: 0 auto;
+margin-top: -100px;
+max-width: 1000px;
+height: 450px;
+
+}
+
+.main .middle{
+    
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.middle{
+    overflow: hidden;
+}
+.contents{
+    transform: translateY(90%);
+    overflow: hidden;
+    opacity: 0;
+   
+}
+.contents img{
+    transition: all 0.8s;
+    
+}
+.contents img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.main div{
+margin: 0 auto;
+margin-top:10px ;
+
+}
+
+.main  div p{
+   
+   font-family: "微软雅黑";
+   color:#888 ;
+   font-size: 14px;
+   max-width: 120px;
+}
+
+
+
+/* 地图 */
+.second-foot{
+    width: 1266px;
+
+    margin: 0 auto;
+}
+#containers {
+    width: 700px;
+    height: 450px;
+}
+ .map-word{
+    margin-left: 300px ;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #999;
+    font-family:"微软雅黑";
+}
+
+
+.map-form{
+    width: 1266px;
+    display: flex;
+    margin: 0 auto;
+}
+.form-word{
+    font-size: 30px;
+    margin-left:180px ;
+    margin-bottom: 20px;
+    color: #666;    
+}
+
+
+.foot{
+    
+    margin: 0 auto;
+    z-index: 9999;
+    margin-top: 50px;
+    width: 1000px;
+    height: 50px;
+
+}
+.foot .foot-word1{
+   text-align: center;
+   font-size: 15px;
+   font-family:"微软雅黑";
+   color: #999;
+}
+
+.foot .foot-word2{
+    float: right;
+    font-size: 12px;
+    font-family:"微软雅黑";
+    color: #999;
+ }
+
+ /* 建议 */
+ :root{
+    --color:230;
+    --first:hsl(var(--color),69%,61%);
+    --text:hsl(var(--color),8%,65%);
+    --input:hsl(var(--color),70%,96%);
+    --title:hsl(var(--color),8%,15%);
+}
+
+.button{
+    text-decoration: none;
+}
+
+.section{
+    padding: 6rem 0 2rem;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 768px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.section>div{
+    padding: 10px 0;
+    display: block;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact_content{
+    background-color: var(--input);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+.label{
+    font-size: .75rem;
+    /* color: var(--title); */
+    color: #666;
+    font-family: '微软雅黑';
+}
+.form{
+    width: 460px;
+}
+.input{
+    width: 100%;
+    background-color: var(--input);
+    color: var(--text);
+    font-family: 'PT Serif' , serif;
+    font-size: .938rem;
+    border: none;
+    outline: none;
+    padding: .25rem .5rem 0 .5rem;
+}
+.inputs{
+    grid-template-columns: repeat(2,1fr);
+}
+.button{
+    display: inline-block;
+    background-color: var(--input);
+    color: rgb(73, 72, 72);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    font-family: '微软雅黑';
+}
